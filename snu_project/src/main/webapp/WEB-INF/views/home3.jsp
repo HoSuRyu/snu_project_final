@@ -112,12 +112,12 @@ header css
 /*
 header css
 */
-.snu_main_promise, .snu_visit_view {
+.snu_main_promise {
 	width: 90%;
 	margin: auto;
 }
 
-.snu_main_promise h1, .snu_visit_view h1 {
+.snu_main_promise h1 {
 	font-weight: bold;
 	font-size: 25px;
 	color: #0F0F70;
@@ -129,6 +129,7 @@ html {
 }
 
 body {
+
 	/* Margin bottom by footer height */
 	margin-bottom: 60px;
 }
@@ -288,34 +289,6 @@ body {
 		left: -30px;
 	}
 }
-
-.snu_promise_info {
-	width: 85%;
-	padding: 20% 0%;
-	margin: auto;
-	border-radius: 0.5em;
-	box-shadow: 5px 5px 5px 2px rgb(0 0 0/ 30%)
-}
-
-.snu_promise_text {
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-.snu_promise_icon {
-	color: white;
-	font-size: 50px;
-}
-
-@media ( max-width :767px) {
-	.snu_promise_text {
-		font-size: 14px;
-	}
-	.snu_promise_icon {
-		font-size: 35px;
-	}
-}
 </style>
 
 </head>
@@ -354,125 +327,59 @@ body {
 				<div class="container-fluid">
 					<div id="carousel-example-1" class="carousel slide"
 						data-ride="carousel">
-						<div class="carousel-inner row w-100 mx-auto" role="listbox"
-							style="padding: 10px 0px;">
+						<div class="carousel-inner row w-100 mx-auto" role="listbox">
 							<div
 								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3 active">
-								<div class="snu_promise_info"
-									style="background-color: rgb(46, 204, 113);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
+								<img src="https://picsum.photos/id/100/600/600"
+									class="img-fluid mx-auto d-block" alt="img1">
 							</div>
 							<div
 								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(131, 198, 159)">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
+								<img src="https://picsum.photos/id/1000/600/600"
+									class="img-fluid mx-auto d-block" alt="img2">
 							</div>
 							<div
 								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(0, 111, 48);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
+								<img src="https://picsum.photos/id/1001/600/600"
+									class="img-fluid mx-auto d-block" alt="img3">
 							</div>
 							<div
 								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(0, 111, 48);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
+								<img src="https://picsum.photos/id/1002/600/600"
+									class="img-fluid mx-auto d-block" alt="img4">
 							</div>
 							<div
 								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(56, 230, 130);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
+								<img src="https://picsum.photos/id/1003/600/600"
+									class="img-fluid mx-auto d-block" alt="img5">
 							</div>
 							<div
 								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-								<div class="snu_promise_info"
-									style="background-color: rgb(95, 182, 132);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
+								<img src="https://picsum.photos/id/1004/600/600"
+									class="img-fluid mx-auto d-block" alt="img6">
 							</div>
-
+							<div
+								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+								<img src="https://picsum.photos/id/1005/600/600"
+									class="img-fluid mx-auto d-block" alt="img7">
+							</div>
+							<div
+								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
+								<img src="https://picsum.photos/id/1006/600/600"
+									class="img-fluid mx-auto d-block" alt="img8">
+							</div>
 						</div>
 						<a class="carousel-control-prev" href="#carousel-example-1"
-							role="button" data-slide="prev" style="left: -30px; opacity: 1;">
-							<i style="color: #0F0F70; font-size: 25px;"
+							role="button" data-slide="prev"style="left: -30px; opacity:1;"> <i
+							style="color: #0F0F70; font-size: 25px;"
 							class="fas fa-angle-left"></i> <span class="sr-only">Previous</span>
 						</a> <a class="carousel-control-next" href="#carousel-example-1"
-							role="button" data-slide="next" style="right: -30px; opacity: 1;">
-							<i style="color: #0F0F70; font-size: 25px;"
+							role="button" data-slide="next" style="right: -30px; opacity:1;"> <i
+							style="color: #0F0F70; font-size: 25px;"
 							class="fas fa-angle-right"></i> <span class="sr-only">Next</span>
 						</a>
 					</div>
 				</div>
-			</div>
-
-		</div>
-
-		<div class="snu_visit_view">
-			<h1>여러분께서는 어떤 사범대를 꿈꾸시나요?</h1>
-			<div class="row">
-				<div class="col-md-2"><span>여러분께서 원하시는 사범대의 모습을 적어주세요</span></div>
-				<div class="col-md-10"></div>
 			</div>
 
 		</div>
