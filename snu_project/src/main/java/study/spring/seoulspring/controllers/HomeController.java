@@ -1,4 +1,4 @@
-package study.spring.seoulspring;
+package study.spring.seoulspring.controllers;
 
 import java.text.DateFormat;
 import java.util.Date;
