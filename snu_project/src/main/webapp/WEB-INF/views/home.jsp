@@ -519,8 +519,5 @@ body {
 							}
 						});
 	</script>
-
-
-
 </body>
 </html>
