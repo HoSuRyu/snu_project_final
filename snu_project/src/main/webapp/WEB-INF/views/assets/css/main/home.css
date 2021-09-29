@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*메인*/
+
+.container {
+	padding: 0px;
+	width: 100%;
+}
+
+.snu_main {
+	background-color: rgba(52, 152, 219, 0.08);
+}
+
+.snu_main .row {
+	margin: 0px;
+}
+
+/*기조문 */
+.snu_main_promise_content_box, .snu_main_candidate_info {
+	height: 450px;
+	padding: 0px 20px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.promise_btn, .candidate_btn {
+	position: absolute;
+	bottom: 40px;
+	right: 50px;
+}
+
+.snu_name_info {
+	font-size: 20px;
+	font-weight: bold;
+	color: #0F0F70
+}
+
+.snu_name {
+	font-size: 24px;
+	font-weight: bold;
+	color: #0F0F70
+}
+
+.snu_main_promise_text {
+	font-weight: bold;
+	line-height: 25px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+/*후보자 */
+.snu_main_candidate_img_box {
+	height: 450px;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+}

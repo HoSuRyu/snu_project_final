@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*header*/
+.snu_header {
+	box-shadow: 0 5px 5px rgb(0 0 0/ 30%);
+}
+
+.snu_header_inner_box {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.snu_header_logo_box {
+	display: flex;
+}
+
+.snu_header_logo_img {
+	padding: 0px 10px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #0F0F70;
+}
+
+.snu_header_logo_text {
+	font-weight: bold;
+	color: gray;
+	line-height: 15px;
+	padding-top: 5px;
+}

@@ -21,461 +21,114 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" />
 
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/assets/css/main/home.css" />
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/assets/css/main/header.css" />
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/assets/css/main/footer.css" />
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/assets/css/main/carousel.css" />
+
 
 
 <style type="text/css">
+
+
 /* 반응형 css*/
-@media ( min-width :1200px) {
-	div.snu_sns_btn {
-		position: absolute;
-		top: 0;
-		right: 80px;
-	}
-	div.snu_header {
-		height: 800px;
-	}
-}
 
+
+
+/* 가장 작은 해상도 (모바일 , 가로 767px이하 )*/
 @media ( max-width :767px) {
-	div.snu_header {
-		height: 300px;
-	}
+
 }
 
-/*
-header css
-*/
-.container {
-	padding: 0px;
-	width: 100%;
+/*태블릿 or 가로 768px이상 ~ 991px이하*/
+@media (min-width:992px) and (max-width: 1199px){
+
 }
 
-.snu_header {
-	width: 100%;
-	display: flex;
-	background-color: white;
-	padding: 10px 0px;
-	background-image:
-		url('${pageContext.request.contextPath}/assets/img/seoul.png');
-	height: 500px;
-	background-repeat: no-repeat;
-}
-
-.snu_header .row {
-	margin: 0px;
-	width: 100%;
-	position: relative;
-}
-
-.snu_logo {
-	color: white;
-	background-color: #0F0F70;
-	font-size: 30px;
-	padding: 20px 0px;
-	text-align: center;
-}
-
-.snu_motto {
-	padding-top: 50px;
-	font-weight: bold;
-	color: white;
-}
-
-.snu_vote_period span {
-	font-weight: bold;
-	color: #0F0F70;
-	font-size: 14px;
-}
-
-.snu_sns_btn {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-
-.snu_sns_btn a {
-	display: inline-block;
-	background-color: #0F0F70;
-	padding: 10px;
-	width: 40px;
-	height: 40px;
-	line-height: 18px;
-	text-align: center;
-	border-radius: 0.5em;
-	margin-right: 10px;
-}
-
-.snu_sns_btn i {
-	color: white;
-	font-size: 20px;
-}
-/*
-header css
-*/
-.snu_main_promise, .snu_visit_view {
-	width: 90%;
-	margin: auto;
-}
-
-.snu_main_promise h1, .snu_visit_view h1 {
-	font-weight: bold;
-	font-size: 25px;
-	color: #0F0F70;
-}
-/**/
-html {
-	position: relative;
-	min-height: 100%;
-}
-
-body {
-	/* Margin bottom by footer height */
-	margin-bottom: 60px;
-}
-/* code customized by Iatek LLC 2018 */
-/* Sticky carousel-example-1 styles
--------------------------------------------------- */
-@media ( min-width : 768px) and (max-width: 991px) {
-	/* Show 4th slide on md if col-md-4*/
-	#carousel-example-1 .carousel-inner .active.col-md-4.carousel-item+.carousel-item+.carousel-item+.carousel-item
-		{
-		position: absolute;
-		top: 0;
-		right: -33.3333%; /*change this with javascript in the future*/
-		z-index: -1;
-		display: block;
-		visibility: visible;
-	}
-}
-
-@media ( min-width : 576px) and (max-width: 768px) {
-	/* Show 3rd slide on sm if col-sm-6*/
-	#carousel-example-1 .carousel-inner .active.col-sm-6.carousel-item+.carousel-item+.carousel-item
-		{
-		position: absolute;
-		top: 0;
-		right: -50%; /*change this with javascript in the future*/
-		z-index: -1;
-		display: block;
-		visibility: visible;
-	}
-}
-
-@media ( min-width : 1px) {
-	#carousel-example-1 .carousel-item {
-		margin-right: 0;
-	}
-	/* show 2 items */
-	#carousel-example-1 .carousel-inner .active+.carousel-item {
-		display: block;
-	}
-	#carousel-example-1 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-		#carousel-example-1 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item
-		{
-		transition: none;
-	}
-	#carousel-example-1 .carousel-inner .carousel-item-next {
-		position: relative;
-		transform: translate3d(0, 0, 0);
-	}
-	/* left or forward direction */
-	#carousel-example-1 .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-		#carousel-example-1 .carousel-item-next.carousel-item-left+.carousel-item,
-		#carousel-example-1 .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item
-		{
-		position: relative;
-		transform: translate3d(-100%, 0, 0);
-		visibility: visible;
-	}
-	/* farthest right hidden item must be also positioned for animations */
-	#carousel-example-1 .carousel-inner .carousel-item-prev.carousel-item-right
-		{
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		display: block;
-		visibility: visible;
-	}
-	/* right or prev direction */
-	#carousel-example-1 .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-		#carousel-example-1 .carousel-item-prev.carousel-item-right+.carousel-item,
-		#carousel-example-1 .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item
-		{
-		position: relative;
-		transform: translate3d(100%, 0, 0);
-		visibility: visible;
-		display: block;
-		visibility: visible;
-	}
-}
-/* MD */
-@media ( min-width : 768px) {
-	/* show 3rd of 3 item slide */
-	#carousel-example-1 .carousel-inner .active+.carousel-item+.carousel-item
-		{
-		display: block;
-	}
-	#carousel-example-1 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item
-		{
-		transition: none;
-	}
-	#carousel-example-1 .carousel-inner .carousel-item-next {
-		position: relative;
-		transform: translate3d(0, 0, 0);
-	}
-	/* left or forward direction */
-	#carousel-example-1 .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item
-		{
-		position: relative;
-		transform: translate3d(-100%, 0, 0);
-		visibility: visible;
-	}
-	/* right or prev direction */
-	#carousel-example-1 .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item
-		{
-		position: relative;
-		transform: translate3d(100%, 0, 0);
-		visibility: visible;
-		display: block;
-		visibility: visible;
-	}
-}
-/* LG */
-@media ( min-width : 991px) {
-	/* show 4th item */
-	#carousel-example-1 .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item
-		{
-		display: block;
-	}
-	#carousel-example-1 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item
-		{
-		transition: none;
-	}
-	/* Show 5th slide on lg if col-lg-3 */
-	#carousel-example-1 .carousel-inner .active.col-lg-3.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item
-		{
-		position: absolute;
-		top: 0;
-		right: -25%; /*change this with javascript in the future*/
-		z-index: -1;
-		display: block;
-		visibility: visible;
-	}
-	/* left or forward direction */
-	#carousel-example-1 .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item
-		{
-		position: relative;
-		transform: translate3d(-100%, 0, 0);
-		visibility: visible;
-	}
-	/* right or prev direction //t - previous slide direction last item animation fix */
-	#carousel-example-1 .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item
-		{
-		position: relative;
-		transform: translate3d(100%, 0, 0);
-		visibility: visible;
-		display: block;
-		visibility: visible;
-	}
-	.carousel-control-prev, .carousel-control-next {
-		width: 0%;
-	}
-	.carousel-control-next {
-		right: -30px;
-	}
-	.carousel-control-prev {
-		left: -30px;
-	}
-}
-
-.snu_promise_info {
-	width: 85%;
-	padding: 20% 0%;
-	margin: auto;
-	border-radius: 0.5em;
-	box-shadow: 5px 5px 5px 2px rgb(0 0 0/ 30%)
-}
-
-.snu_promise_text {
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-.snu_promise_icon {
-	color: white;
-	font-size: 50px;
-}
-
-@media ( max-width :767px) {
-	.snu_promise_text {
-		font-size: 14px;
-	}
-	.snu_promise_icon {
-		font-size: 35px;
-	}
-}
 </style>
 
 </head>
 
 <body>
 	<div class="container">
-		<div class="snu_header">
+		<%@ include file="../include/header.jsp"%>
+
+
+		<div class="snu_main">
 			<div class="row">
-				<div class="col-md-1 col-sm-1 col-xs-1"></div>
+				<div class="col-md-2"></div>
 
-				<div class="col-md-2 col-sm-3 col-xs-3 snu_logo ">SUNBON</div>
+				<div class="col-md-4 snu_main_promise_content_box">
+					<div>
+						<button class="promise_btn btn default-btn">기조문 더보기</button>
+						<br />
+						<div style="padding: 30px 0px;">
+							<span class="snu_name_info">제41대 서울대학교 사범대학 학생회 선본</span> <br>
+							<span class="snu_name">선본명</span>
+						</div>
 
-				<div class="col-md-4 col-sm-5 hidden-xs  snu_motto ">선본슬로거 어쩌구
-					저쩌구 어쩌구</div>
+						<br /> <br />
 
-				<div class="col-md-4 hidden-sm hidden-xs snu_vote_period"
-					style="margin-top: 15px;">
-					<span>제 41대 사범대 학생회 선거기간:</span> <br /> <span>2021년 10월 15일
-						~ 2021년 10월 17일</span> <br /> <span>vote for us</span>
+						<div class="snu_main_promise_text">
+							여기서는 기조분을 요약한다. 그러나 지금은 하지않는다. <br> 왜냐면 내가 할건 아니기 떄문이다. <br>
+							그러나 공백이라면 조금 어색할 거 같아 어느정도 써본다. <br> 선본 화이팅 개발자들 화이팅 팀장님들
+							화이팅 <br> 그리고 정후보 부후보 화이팅 <br /> <br /> 진짜 피곤하다 여러분도 다
+							피곤하시겠죠.? <br> 그리고 정후보 부후보 화이팅
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="col-md-4 snu_main_candidate_info">
+					<button class="candidate_btn btn default-btn">후보자 더보기</button>
+					<div class="snu_main_candidate_img_box">
+						<img src="${pageContext.request.contextPath }/assets/img/1.png">
+
+					</div>
+
 				</div>
 
 				<div class="col-md-1"></div>
-
-				<div class="snu_sns_btn" style="margin-top: 20px;">
-					<a href=""><i class="fab fa-instagram"></i></a> <a href=""><i
-						class="fab fa-facebook-f"></i></a> <a href=""><i
-						class="fab fa-youtube"></i></a>
-				</div>
 			</div>
+
 		</div>
+
+
 
 
 		<div class="snu_main_promise">
-			<h1>저희 선본은 이런 사범대학을 꿈꿉니다.</h1>
-			<div class="images-content">
-				<div class="container-fluid">
-					<div id="carousel-example-1" class="carousel slide"
-						data-ride="carousel">
-						<div class="carousel-inner row w-100 mx-auto" role="listbox"
-							style="padding: 10px 0px;">
-							<div
-								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3 active">
-								<div class="snu_promise_info"
-									style="background-color: rgb(46, 204, 113);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
-							</div>
-							<div
-								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(131, 198, 159)">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
-							</div>
-							<div
-								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(0, 111, 48);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
-							</div>
-							<div
-								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(0, 111, 48);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
-							</div>
-							<div
-								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-
-								<div class="snu_promise_info"
-									style="background-color: rgb(56, 230, 130);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
-							</div>
-							<div
-								class="carousel-item col-6  col-xs-6 col-sm-6 col-md-4 col-lg-3">
-								<div class="snu_promise_info"
-									style="background-color: rgb(95, 182, 132);">
-									<div style="text-align: center; padding: 5% 0%;">
-										<i class="far fa-user snu_promise_icon"></i>
-									</div>
-									<div style="text-align: center; padding: 10% 0%;">
-										<span class="snu_promise_text">후보자에 대해</span>
-									</div>
-									<div style="text-align: center;">
-										<span class="snu_promise_text"> 궁금하시다면</span>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<a class="carousel-control-prev" href="#carousel-example-1"
-							role="button" data-slide="prev" style="left: -30px; opacity: 1;">
-							<i style="color: #0F0F70; font-size: 25px;"
-							class="fas fa-angle-left"></i> <span class="sr-only">Previous</span>
-						</a> <a class="carousel-control-next" href="#carousel-example-1"
-							role="button" data-slide="next" style="right: -30px; opacity: 1;">
-							<i style="color: #0F0F70; font-size: 25px;"
-							class="fas fa-angle-right"></i> <span class="sr-only">Next</span>
-						</a>
-					</div>
-				</div>
+			<div class="snu_promise_box">
+				<h1>OUR PROMISE</h1>
+				<br /> <br />
+				<%@ include file="../include/main_carousel.jsp"%>
+				<br /> <br /> <br />
 			</div>
+
 
 		</div>
 
-		<div class="snu_visit_view">
-			<h1>여러분께서는 어떤 사범대를 꿈꾸시나요?</h1>
-			<div class="row">
-				<div class="col-md-2"><span>여러분께서 원하시는 사범대의 모습을 적어주세요</span></div>
-				<div class="col-md-10"></div>
-			</div>
 
+		<div style="background-color: rgba(52, 152, 219, 0.08);"
+			class="snu_detail_view">
+			<div class="snu_detail_box">
+				<br /> <br />
+				<h1>MORE ABOUT US</h1>
+				<br /></br>
+				<iframe width="560" height="315"
+					src="https://www.youtube.com/embed/cn3gk3b5Mog"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<br /> <br /> <br /> <br />
+			</div>
 		</div>
+
+		<%@ include file="../include/footer.jsp"%>
 	</div>
 	<script
 		src="${pageContext.request.contextPath}/assets/js/jquery.min.js"></script>
