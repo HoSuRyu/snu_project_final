@@ -47,12 +47,6 @@
 /*태블릿 or 가로 768px이상 ~ 991px이하*/
 @media (min-width:992px) and (max-width: 1199px){
 
-
-}
-
-/* 가장 큰 해상도 (웹 , 가로 1200px이상 )*/
-@media ( min-width :1200px) {
-
 }
 
 </style>
@@ -61,80 +55,9 @@
 
 <body>
 	<div class="container">
-		<%@ include file="../include/header.jsp"%>
-
-
-		<div class="snu_main">
-			<div class="row">
-				<div class="col-md-2"></div>
-
-				<div class="col-md-4 snu_main_promise_content_box">
-					<div>
-						<button class="promise_btn btn default-btn">기조문 더보기</button>
-						<br />
-						<div style="padding: 30px 0px;">
-							<span class="snu_name_info">제41대 서울대학교 사범대학 학생회 선본</span> <br>
-							<span class="snu_name">선본명</span>
-						</div>
-
-						<br /> <br />
-
-						<div class="snu_main_promise_text">
-							여기서는 기조분을 요약한다. 그러나 지금은 하지않는다. <br> 왜냐면 내가 할건 아니기 떄문이다. <br>
-							그러나 공백이라면 조금 어색할 거 같아 어느정도 써본다. <br> 선본 화이팅 개발자들 화이팅 팀장님들
-							화이팅 <br> 그리고 정후보 부후보 화이팅 <br /> <br /> 진짜 피곤하다 여러분도 다
-							피곤하시겠죠.? <br> 그리고 정후보 부후보 화이팅
-						</div>
-					</div>
-
-
-				</div>
-
-				<div class="col-md-4 snu_main_candidate_info">
-					<button class="candidate_btn btn default-btn">후보자 더보기</button>
-					<div class="snu_main_candidate_img_box">
-						<img src="${pageContext.request.contextPath }/assets/img/1.png">
-
-					</div>
-
-				</div>
-
-				<div class="col-md-1"></div>
-			</div>
-
-		</div>
-
-
-
-
-		<div class="snu_main_promise">
-			<div class="snu_promise_box">
-				<h1>OUR PROMISE</h1>
-				<br /> <br />
-				<%@ include file="../include/main_carousel.jsp"%>
-				<br /> <br /> <br />
-			</div>
-
-
-		</div>
-
-
-		<div style="background-color: rgba(52, 152, 219, 0.08);"
-			class="snu_detail_view">
-			<div class="snu_detail_box">
-				<br /> <br />
-				<h1>MORE ABOUT US</h1>
-				<br /></br>
-				<iframe width="560" height="315"
-					src="https://www.youtube.com/embed/cn3gk3b5Mog"
-					title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
-				<br /> <br /> <br /> <br />
-			</div>
-		</div>
-
-		<%@ include file="../include/footer.jsp"%>
+		<%@ include file="../../include/header.jsp"%>
+		${student.getName()}
+		<%@ include file="../../include/footer.jsp"%>
 	</div>
 	<script
 		src="${pageContext.request.contextPath}/assets/js/jquery.min.js"></script>

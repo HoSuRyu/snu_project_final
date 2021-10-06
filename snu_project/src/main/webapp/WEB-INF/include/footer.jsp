@@ -11,9 +11,9 @@
 	</div>
 	<div style="text-align: right;">
 		<div class="snu_sns_btn">
-			<a href=""><i class="fab fa-instagram"></i></a> <a href=""><i
-				class="fab fa-facebook-f"></i></a> <a href=""><i
-				class="fab fa-youtube"></i></a>
+			<a href="${pageContext.request.contextPath}/main/home2.do"><i class="fab fa-instagram"></i></a>
+			<a href=""><i class="fab fa-facebook-f"></i></a> 
+			<a href=""><i class="fab fa-youtube"></i></a>
 		</div>
 		<br />
 
